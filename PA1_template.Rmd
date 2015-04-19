@@ -246,7 +246,7 @@ So, I would say the difference is minute for both.
                    group_by(weekdayOrWeekend, interval) %>%
                    summarise(avg=mean(steps))
         xyplot(avg ~ interval | weekdayOrWeekend, data = plot_DS, 
-               layout = c(1, 2), type = "l", xlab="5min Interval", 
+               layout = c(1, 2), type = "l", xlab="5min Intervals over 24hrs", 
                ylab="Number of Steps", 
                main="Total Number of Steps Taken over a Weekday and Weekend")
 ```
